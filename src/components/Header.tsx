@@ -23,7 +23,7 @@ const Header = () => {
     { name: 'About', path: '/about' },
     { name: 'Founder', path: '/founder' },
     { name: 'Achievements', path: '/achievements' },
-    { name: 'Mandatory Public Disclosure', path: '/resources' },
+    { name: 'Mandatory Public Disclosure', path: '/mandatory-public-disclosure' },
   ];
 
   const scrollToContact = () => {

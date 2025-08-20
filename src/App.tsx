@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/founder" element={<FounderPage />} />
-          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/mandatory-public-disclosure" element={<ResourcesPage />} />
           <Route path="/achievements" element={<AchievementsPage />} />
         </Routes>
       </div>
