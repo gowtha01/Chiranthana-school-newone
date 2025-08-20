@@ -30,8 +30,8 @@ const ResourcesPage = () => {
   // Table A - General Information
   const generalInfo = [
     { sl: 1, item: 'Name of the school', details: 'CHIRANTHANA SCHOOL' },
-    { sl: 2, item: 'Affiliation No. (if applicable)', details: '3/ps, 14-9-10' },
-    { sl: 3, item: 'School Code (if applicable)', details: '29230707408' },
+    { sl: 2, item: 'Affiliation No. (if applicable)', details: 'N/A' },
+    { sl: 3, item: 'School Code (if applicable)', details: 'N/A' },
     { sl: 4, item: 'Complete Address with Pin Code', details: 'KHB SATHYAMANGALA, HASSAN' },
     { sl: 5, item: 'Principal Name & Qualification', details: 'Rtn. K. Palaksha, B.Ed' },
     { sl: 6, item: 'School Email ID', details: 'chiranthanaschoolhassan@gmail.com' },
@@ -43,42 +43,42 @@ const ResourcesPage = () => {
     { 
       sl: 1, 
       item: 'Copies of Affiliation/Upgradation Letter and Recent Extension of Affiliation', 
-      link: 'https://drive.google.com/file/d/1quE5LRPOeA09TyhTzt_oIn0AmCMvrEWZ/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/emptysheet2.pdf'
     },
     { 
       sl: 2, 
       item: 'Copies of Society/Trust/Company Registration Certificate', 
-      link: 'https://drive.google.com/file/d/1lhAO0ACzLcuw5rB6MzcYCyUVs1hZcooJ/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/SocietyRegistrationCertificate.pdf'
     },
     { 
       sl: 3, 
       item: 'Copy of No Objection Certificate (NOC) issued by State Government', 
-      details: 'Not Applicable' 
+      details: 'N/A' 
     },
     { 
       sl: 4, 
       item: 'Copies of Recognition Certificate under RTE Act 2009', 
-      link: 'https://drive.google.com/file/d/1lhAO0ACzLcuw5rB6MzcYCyUVs1hZcooJ/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/copyofaffiliation.pdf'
     },
     { 
       sl: 5, 
       item: 'Copy of Valid Building Safety Certificate', 
-      link: 'https://drive.google.com/file/d/1inlcFM8KIPb7B-S87Pyi7LutpYORkhg-/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/buildingcertificate.pdf'
     },
     { 
       sl: 6, 
       item: 'Copy of Valid Fire Safety Certificate issued by Competent Authority', 
-      link: 'https://drive.google.com/file/d/1nclHeX92nCnqKMFZYnYctPQtd7B6ZUTR/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/firesafety.pdf'
     },
     { 
       sl: 7, 
       item: 'Copy of the DEO Certificate submitted by the School', 
-      link: 'https://drive.google.com/file/d/1lhAO0ACzLcuw5rB6MzcYCyUVs1hZcooJ/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/getselfcertification.pdf'
     },
     { 
       sl: 8, 
       item: 'Copy of Valid Water, Health, and Sanitation Certificates', 
-      link: 'https://drive.google.com/file/d/1a0YvuIPmfWzuPxiDywlq2IQaU8pBO4b-/view?usp=sharing'
+      link: 'https://chiranthana.school/Documents/waterandhealth.pdf'
     },
   ];
 
@@ -87,22 +87,22 @@ const ResourcesPage = () => {
     { 
       sl: 1, 
       item: 'FEE STRUCTURE OF THE SCHOOL', 
-      link: 'https://drive.google.com/file/d/1GaL8wTvfKfcWB45g7JcFHNnyQABS1UKF/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/school_fees.pdf'
     },
     { 
       sl: 2, 
       item: 'ANNUAL ACADEMIC CALENDAR', 
-      link: 'https://drive.google.com/file/d/1e9O9-FeMes_RnAUdqzUpILI8fUvwJrIX/view?usp=sharing'
+      link: 'https://chiranthana.school/Documents/Annualcalendar.pdf'
     },
     { 
       sl: 3, 
       item: 'LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)', 
-      link: 'https://drive.google.com/file/d/1AiNg5MXyl5hi29ylZD5OPOuRdB5dfq2D/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/managingcommittee.pdf'
     },
     { 
       sl: 4, 
       item: 'LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS', 
-      link: 'https://drive.google.com/file/d/1TV_0wnsPczS07U2wUkrslPlybuLV-rpG/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/parent_teacher.pdf'
     },
     { 
       sl: 5, 
@@ -139,22 +139,22 @@ const ResourcesPage = () => {
     {
       title: 'Fee Structure',
       description: 'Detailed fee structure for all classes and academic year',
-      link: 'https://drive.google.com/file/d/1GaL8wTvfKfcWB45g7JcFHNnyQABS1UKF/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/school_fees.pdf'
     },
     {
       title: 'Annual Academic Calendar',
       description: 'Complete academic calendar with important dates and events',
-      link: 'https://drive.google.com/file/d/1e9O9-FeMes_RnAUdqzUpILI8fUvwJrIX/view?usp=drive_link'
+      link: 'https://chiranthana.school/Documents/Annualcalendar.pdf'
     },
     {
       title: 'School Management Committee (SMC)',
       description: 'Details of School Management Committee members and structure',
-      link: 'https://drive.google.com/file/d/1AiNg5MXyl5hi29ylZD5OPOuRdB5dfq2D/view?usp=sharing'
+      link: 'https://chiranthana.school/documents/managingcommittee.pdf'
     },
     {
       title: 'Parent Teacher Association (PTA)',
       description: 'Information about PTA members and activities',
-      link: 'https://drive.google.com/file/d/1TV_0wnsPczS07U2wUkrslPlybuLV-rpG/view?usp=drive_link'
+      link: 'https://chiranthana.school/documents/parent_teacher.pdf'
     },
   ];
 
