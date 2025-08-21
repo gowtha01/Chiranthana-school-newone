@@ -44,8 +44,8 @@ const MainPage = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Fixed for mobile */}
-      <section className="relative min-h-[90vh] sm:min-h-[80vh] flex items-center justify-center overflow-hidden">
+      {/* Hero Section - Reduced spacing */}
+      <section className="relative min-h-[100vh] sm:min-h-[90vh] flex items-center justify-center overflow-hidden">
         <PhotoCard
           src="/Prayer.jpg"
           alt="CHIRANTHANA SCHOOL campus"
@@ -72,15 +72,15 @@ const MainPage = () => {
           <Link
             to="/about"
             aria-label="Go to About Us page"
-            className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-amber-600 transition-colors duration-200"
+            className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold hover:bg-amber-600 transition-colors duration-200"
           >
             About Us
           </Link>
         </motion.div>
       </section>
 
-      {/* Stats Section - Fixed for mobile */}
-      <section className="py-12 sm:py-16 bg-gray-50">
+      {/* Stats Section - Reduced spacing */}
+      <section className="py-8 sm:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
@@ -97,8 +97,8 @@ const MainPage = () => {
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
               >
-                <stat.icon className="w-6 h-6 sm:w-8 sm:h-8 text-blue-900 mx-auto mb-3 sm:mb-4" />
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-900 mb-2">
+                <stat.icon className="w-6 h-6 sm:w-8 sm:h-8 text-blue-900 mx-auto mb-2 sm:mb-3" />
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-900 mb-1 sm:mb-2">
                   {stat.value}
                 </div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">
@@ -110,8 +110,8 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* Mini About Section - Fixed for mobile */}
-      <section className="py-16 sm:py-20 bg-white">
+      {/* Mini About Section - Reduced spacing */}
+      <section className="py-12 sm:py-16 bg-white">
         <motion.div 
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           variants={containerVariants}
@@ -120,13 +120,13 @@ const MainPage = () => {
           viewport={{ once: true }}
         >
           <motion.h2 
-            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
             variants={itemVariants}
           >
             About Us
           </motion.h2>
           <motion.p 
-            className="text-base sm:text-lg text-gray-700 mb-8 sm:mb-10 leading-relaxed px-2"
+            className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed px-2"
             variants={itemVariants}
           >
             We blend strong academics with values-based learning in a safe, supportive environment. 
@@ -135,7 +135,7 @@ const MainPage = () => {
           </motion.p>
           
           <motion.div 
-            className="grid gap-4 sm:gap-6 md:grid-cols-2 mb-8 sm:mb-12"
+            className="grid gap-3 sm:gap-4 md:grid-cols-2 mb-6 sm:mb-8"
             variants={itemVariants}
           >
             {highlights.map((highlight, index) => (
@@ -159,7 +159,7 @@ const MainPage = () => {
               <Link
                 to="/about"
                 aria-label="Go to About page"
-                className="inline-block bg-blue-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 focus-visible"
+                className="inline-block bg-blue-900 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 focus-visible"
               >
                 Learn More
               </Link>
@@ -168,8 +168,8 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* Students Photo Section - Fixed for mobile */}
-      <section className="py-16 sm:py-20 bg-gray-50">
+      {/* Students Photo Section - Reduced spacing */}
+      <section className="py-12 sm:py-16 bg-gray-50">
         <motion.div 
           className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
           initial={{ opacity: 0, y: 30 }}
@@ -177,10 +177,10 @@ const MainPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-4 sm:mb-6">Our Learning Community</h2>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-3 sm:mb-4">Our Learning Community</h2>
+              <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 At CHIRANTHANA SCHOOL, every student is part of a vibrant learning community where 
                 curiosity thrives, friendships flourish, and dreams take shape. Our students embody 
                 the values of respect, excellence, and compassion in everything they do.
@@ -191,7 +191,7 @@ const MainPage = () => {
               >
                 <Link
                   to="/about"
-                  className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-amber-600 transition-colors duration-200 focus-visible"
+                  className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-amber-600 transition-colors duration-200 focus-visible"
                 >
                   Discover More
                 </Link>
@@ -210,8 +210,8 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* School Building Section - Fixed for mobile */}
-      <section className="py-16 sm:py-20 bg-white">
+      {/* School Building Section - Reduced spacing and fixed link */}
+      <section className="py-12 sm:py-16 bg-white">
         <motion.div 
           className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
           initial={{ opacity: 0, y: 30 }}
@@ -219,10 +219,10 @@ const MainPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div className="lg:order-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-4 sm:mb-6">Modern Learning Environment</h2>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-3 sm:mb-4">Modern Learning Environment</h2>
+              <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 Our state-of-the-art campus provides the perfect environment for learning and growth. 
                 With well-equipped classrooms, modern facilities, and safe spaces for exploration, 
                 we create an atmosphere where every child can reach their full potential.
@@ -232,8 +232,8 @@ const MainPage = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  to="/resources"
-                  className="inline-block bg-blue-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-blue-800 transition-colors duration-200 focus-visible"
+                  to="/mandatory-public-disclosure"
+                  className="inline-block bg-blue-900 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-blue-800 transition-colors duration-200 focus-visible"
                 >
                   Explore Resources
                 </Link>
@@ -252,8 +252,8 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* Call to Action Section - Fixed for mobile */}
-      <section className="py-16 sm:py-20 bg-blue-900 text-white">
+      {/* Call to Action Section - Reduced spacing */}
+      <section className="py-12 sm:py-16 bg-blue-900 text-white">
         <motion.div 
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -261,8 +261,8 @@ const MainPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">Ready to Join Our Family?</h2>
-          <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 opacity-90 px-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">Ready to Join Our Family?</h2>
+          <p className="text-base sm:text-lg lg:text-xl mb-4 sm:mb-6 opacity-90 px-2">
             Discover how CHIRANTHANA SCHOOL can nurture your child's potential and shape their future.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -272,7 +272,7 @@ const MainPage = () => {
             >
               <Link
                 to="/about"
-                className="inline-block bg-white text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors duration-200 focus-visible w-full sm:w-auto"
+                className="inline-block bg-white text-blue-900 px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors duration-200 focus-visible w-full sm:w-auto"
               >
                 Learn About Us
               </Link>
@@ -288,7 +288,7 @@ const MainPage = () => {
                     contactElement.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-amber-600 transition-colors duration-200 focus-visible w-full sm:w-auto"
+                className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-amber-600 transition-colors duration-200 focus-visible w-full sm:w-auto"
               >
                 Get in Touch
               </button>
@@ -297,19 +297,19 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* Contact Section - Fixed for mobile */}
-      <section id="contact" className="bg-gray-50 py-16 sm:py-20">
+      {/* Contact Section - Reduced spacing */}
+      <section id="contact" className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">Get in touch</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Get in touch</h2>
               <ContactForm />
             </div>
 
-            <div className="space-y-6 sm:space-y-8">
+            <div className="space-y-4 sm:space-y-6">
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 sm:mb-6">Contact Details</h3>
-                <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">Contact Details</h3>
+                <div className="space-y-3">
                   <a
                     href="mailto:chiranthanaschoolhassan@gmail.com"
                     className="flex items-center space-x-3 text-sm sm:text-base text-gray-700 hover:text-blue-900 transition-colors duration-200 focus-visible"
@@ -332,7 +332,7 @@ const MainPage = () => {
                         href="https://maps.app.goo.gl/HsLySsvJsifCdhhC9"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block mt-2 text-blue-900 hover:text-blue-700 font-medium focus-visible text-sm sm:text-base"
+                        className="inline-block mt-1 text-blue-900 hover:text-blue-700 font-medium focus-visible text-sm sm:text-base"
                       >
                         View on Maps
                       </a>
@@ -342,8 +342,8 @@ const MainPage = () => {
               </div>
 
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 sm:mb-6">Follow Us</h3>
-                <div className="flex space-x-3 sm:space-x-4">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">Follow Us</h3>
+                <div className="flex space-x-3">
                   <a
                     href="https://www.instagram.com/chiranthana_1991"
                     target="_blank"
@@ -387,12 +387,12 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* Footer - Fixed for mobile */}
-      <footer className="bg-gray-800 py-8 sm:py-12">
+      {/* Footer - Reduced spacing */}
+      <footer className="bg-gray-800 py-6 sm:py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 text-gray-300">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 text-gray-300">
             <div>
-              <div className="flex items-center space-x-3 mb-4">
+              <div className="flex items-center space-x-3 mb-3 sm:mb-4">
                 <img 
                   src="/SchoolLogo copy.jpg" 
                   alt="Chiranthana School Logo"
@@ -407,7 +407,7 @@ const MainPage = () => {
             </div>
             
             <div>
-              <h3 className="text-base sm:text-lg font-semibold text-white mb-4">Contact</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Contact</h3>
               <div className="space-y-2 text-xs sm:text-sm">
                 <p>KHB SATHYAMANGALA</p>
                 <a
@@ -426,7 +426,7 @@ const MainPage = () => {
             </div>
             
             <div>
-              <h3 className="text-base sm:text-lg font-semibold text-white mb-4">Follow Us</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Follow Us</h3>
               <div className="flex space-x-3">
                 <a
                   href="https://www.instagram.com/chiranthana_1991"
@@ -468,7 +468,7 @@ const MainPage = () => {
             </div>
           </div>
           
-          <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-700 text-center">
+          <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-gray-700 text-center">
             <p className="text-gray-400 text-xs sm:text-sm">
               © 2025 Chiranthana Education Society. All rights reserved.
             </p>
