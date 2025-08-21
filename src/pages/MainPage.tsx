@@ -44,27 +44,27 @@ const MainPage = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Reduced spacing */}
-      <section className="relative min-h-[100vh] sm:min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Hero Section - Fixed positioning and removed excess space */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <PhotoCard
           src="/Prayer.jpg"
           alt="CHIRANTHANA SCHOOL campus"
           className="absolute inset-0 rounded-none"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20"></div>
         </PhotoCard>
 
         <motion.div 
-          className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
+          className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto -mt-20"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg">
             CHIRANTHANA SCHOOL
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed opacity-90 px-2">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed opacity-95 px-2 drop-shadow-md">
             At CHIRANTHANA SCHOOL, learning is rooted in solid academics, everyday values, and skills for real life. 
             With caring teachers and a close-knit community, every child grows with confidence.
           </p>
@@ -72,14 +72,14 @@ const MainPage = () => {
           <Link
             to="/about"
             aria-label="Go to About Us page"
-            className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold hover:bg-amber-600 transition-colors duration-200"
+            className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold hover:bg-amber-600 transition-colors duration-200 shadow-lg"
           >
             About Us
           </Link>
         </motion.div>
       </section>
 
-      {/* Stats Section - Reduced spacing */}
+      {/* Stats Section - Immediately following hero */}
       <section className="py-8 sm:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
@@ -110,7 +110,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* Mini About Section - Reduced spacing */}
+      {/* Mini About Section */}
       <section className="py-12 sm:py-16 bg-white">
         <motion.div 
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
@@ -168,7 +168,7 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* Students Photo Section - Reduced spacing */}
+      {/* Students Photo Section */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <motion.div 
           className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
@@ -210,7 +210,7 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* School Building Section - Reduced spacing and fixed link */}
+      {/* School Building Section */}
       <section className="py-12 sm:py-16 bg-white">
         <motion.div 
           className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
@@ -252,7 +252,7 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* Call to Action Section - Reduced spacing */}
+      {/* Call to Action Section */}
       <section className="py-12 sm:py-16 bg-blue-900 text-white">
         <motion.div 
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
@@ -297,7 +297,7 @@ const MainPage = () => {
         </motion.div>
       </section>
 
-      {/* Contact Section - Reduced spacing */}
+      {/* Contact Section */}
       <section id="contact" className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
@@ -387,7 +387,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* Footer - Reduced spacing */}
+      {/* Footer */}
       <footer className="bg-gray-800 py-6 sm:py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6 text-gray-300">
