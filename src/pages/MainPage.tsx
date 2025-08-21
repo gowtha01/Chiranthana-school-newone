@@ -44,42 +44,36 @@ const MainPage = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Fixed positioning and removed excess space */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <PhotoCard
-          src="/Prayer.jpg"
-          alt="CHIRANTHANA SCHOOL campus"
-          className="absolute inset-0 rounded-none"
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20"></div>
-        </PhotoCard>
-
+      {/* Hero Section - Your improved version */}
+      <section className="relative h-[80vh] sm:h-screen flex items-center justify-center">
+        <img 
+          src="/Prayer.jpg" 
+          alt="CHIRANTHANA SCHOOL campus" 
+          className="absolute inset-0 w-full h-full object-cover brightness-50" 
+        />
         <motion.div 
-          className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto -mt-20"
+          className="relative z-10 text-center text-white px-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             CHIRANTHANA SCHOOL
           </h1>
-
-          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed opacity-95 px-2 drop-shadow-md">
+          <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
             At CHIRANTHANA SCHOOL, learning is rooted in solid academics, everyday values, and skills for real life. 
             With caring teachers and a close-knit community, every child grows with confidence.
           </p>
-
           <Link
             to="/about"
-            aria-label="Go to About Us page"
-            className="inline-block bg-amber-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold hover:bg-amber-600 transition-colors duration-200 shadow-lg"
+            className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-amber-500 text-white font-semibold rounded-lg shadow-md hover:bg-amber-600 transition-colors duration-200"
           >
             About Us
           </Link>
         </motion.div>
       </section>
 
-      {/* Stats Section - Immediately following hero */}
+      {/* Stats Section */}
       <section className="py-8 sm:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
