@@ -33,7 +33,7 @@ const ResourcesPage = () => {
     { sl: 2, item: 'Affiliation No. (if applicable)', details: 'N/A' },
     { sl: 3, item: 'School Code (if applicable)', details: 'N/A' },
     { sl: 4, item: 'Complete Address with Pin Code', details: 'KHB SATHYAMANGALA, HASSAN' },
-    { sl: 5, item: 'Principal Name & Qualification', details: 'Rtn. K. Palaksha, B.Ed' },
+    { sl: 5, item: 'Principal Name & Qualification', details: 'K. Palaksha, MSc' },
     { sl: 6, item: 'School Email ID', details: 'chiranthanaschoolhassan@gmail.com' },
     { sl: 7, item: 'Contact Details (Landline/Mobile)', details: '+91 97431 83793' },
   ];
